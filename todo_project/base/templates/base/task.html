@@ -1,0 +1,9 @@
+{% extends 'base/main.html' %} {% block content %}
+<div class="header-bar">
+  <h1>Task: {{task}}</h1>
+  <h2>Due Date: {{dueDate}}</h2>
+  <h3>Completed: {{completed}}</h3>
+  <a href="{% url 'tasks' %}">Go Back</a>
+</div>
+
+{% endblock content %}
